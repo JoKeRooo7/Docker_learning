@@ -117,10 +117,10 @@ CMD spawn-fcgi -p 8080 server && nginx -g 'daemon off;'
 > verification http://localhost:80
 
 > fix nginx.conf
-![new nginx](src/task_4/image/tpshtch_sht.png)
+![new nginx](src/task_4/image/тпштч_сшта.png)
 
 > restarting the container
-![status new](task_4/image/corrected %20nginx.png)
+![status new](src/task_4/image/исправленный%20nginx.png)
 
 
 ## Using Dockle
