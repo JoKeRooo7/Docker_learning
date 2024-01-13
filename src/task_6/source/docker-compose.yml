@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  first_container:
+    build: ../../task_5/source
+    container_name: first_container
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    ports:
+     - "80:8080"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
