@@ -1,3 +1,8 @@
+<a href="https://www.docker.com/">
+    <img src="https://github.com/JoKeRooo7/JoKeRooo7/blob/develop/icons/icons8-docker-240.png" alt="your_gif" 
+       width="120" height="120">
+</a>
+
 # Working with docker on windows
 
 * [Download, restart and basic commands](#download-restart-and-basic-commands)
