@@ -16,7 +16,7 @@
 > скачиваю образ контейнера `docker pull nginx`
 
 > проверяю наличие образа `docker images ls` + размер контейнера
-![docker images](task_1/image/docker_image_ls.png)
+![docker images](src/task_1/image/docker_image_ls.png)
 
 > запускаю образ `docker run -d nginx`
 
@@ -37,7 +37,7 @@
 > содержимое оригинального файла nginx `docker exec [container_id|container_name] cat /etc/nginx/nginx.conf`
 
 > содержимое нового файла nginx.conf, находиться в папке ./task_2/source
-![new nginx](task_2/image/nginx_conf_source.png)
+![new nginx](src/task_2/image/nginx_conf_source.png)
 
 > коопирование моего файла в образ контейнера `docker cp nginx.conf [container_id|container_name]:/etc/nginx/nginx.conf`
 
@@ -88,7 +88,7 @@
 > запуск сервера `docker exec spawn-fcgi -p 8080 ./server`
 
 > проверка сервера:
-![port_81](task_3/image/port_81.png)
+![port_81](src/task_3/image/port_81.png)
 
 
 ## Написание Dockerfile для выполнения всех позиций [выше](#сервен-на-fastcgi-на-языке-си)
@@ -118,10 +118,10 @@ CMD spawn-fcgi -p 8080 server && nginx -g 'daemon off;'
 > проверка http://localhost:80
 
 > исправление nginx.conf
-![new nginx](task_4/image/тпштч_сшта.png)
+![new nginx](src/task_4/image/тпштч_сшта.png)
 
 > перезапуск контейнера 
-![status new](task_4/image/исправленный%20nginx.png)
+![status new](src/task_4/image/исправленный%20nginx.png)
 
 
 ## Использование Dockle
@@ -180,4 +180,4 @@ CMD spawn-fcgi -p 8080 /tmp/server && nginx -g 'daemon off;'
 Его nginx.conf - прослушивает порт 8080. Порт 80 проксирует все запросы на порт 81.
 
 Для того, чтобы создать веб-сервер использую команды `docker-compose build` и  для запуска `docker-compose run`
-![port80](task_6/image/port80.png)
+![port80](src/task_6/image/port80.png)

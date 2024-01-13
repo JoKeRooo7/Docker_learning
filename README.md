@@ -15,7 +15,7 @@ Due to security reasons, some of the screenshots of the work performed have been
 > downloading the image of the `docker pull nginx` container
 
 > checking for the presence of the `docker images ls` image + container size
-![docker images](task_1/image/docker_image_ls.png)
+![docker images](src/task_1/image/docker_image_ls.png)
 
 > running the `docker run -d nginx` image
 
@@ -36,7 +36,7 @@ Due to security reasons, some of the screenshots of the work performed have been
 > contents of the original nginx file `docker exec [container_id|container_name] cat /etc/nginx/nginx.conf`
 
 > the contents of the new nginx.conf file are located in the folder ./task_2/source
-![new nginx](task_2/image/nginx_conf_source.png)
+![new nginx](src/task_2/image/nginx_conf_source.png)
 
 > co-opting my file to the container image `docker cp nginx.conf [container_id|container_name]:/etc/nginx/nginx.conf`
 
@@ -87,7 +87,7 @@ Due to security reasons, some of the screenshots of the work performed have been
 > starting the server `docker exec spawn-fcgi -p 8080 ./server`
 
 > checking the server:
-![port_81](task_3/image/port_81.png)
+![port_81](src/task_3/image/port_81.png)
 
 
 ## Writing a Dockerfile to execute all positions [above](#serven-to-fastcgi-in-c)
@@ -117,7 +117,7 @@ CMD spawn-fcgi -p 8080 server && nginx -g 'daemon off;'
 > verification http://localhost:80
 
 > fix nginx.conf
-![new nginx](task_4/image/tpshtch_sht.png)
+![new nginx](src/task_4/image/tpshtch_sht.png)
 
 > restarting the container
 ![status new](task_4/image/corrected %20nginx.png)
@@ -179,4 +179,4 @@ My main nginx container runs on port 80 and transmits all changes.
 Its nginx.conf is listening on port 8080. Port 80 proxies all requests to port 81.
 
 In order to create a web server, I use the commands `docker-compose build` and to run `docker-compose run`
-![port80](task_6/image/port80.png)
+![port80](src/task_6/image/port80.png)
