@@ -60,7 +60,7 @@
 
 > добавляем к локальному файлу тэг `docker tag [image_id] my_import_image:nginx`
 
-> запуск образа на портах 80 и 443 `docker run -d -p 80:80 -p 443:443 my_import_image:nginx nginx -g `daemon off;`
+> запуск образа на портах 80 и 443 `docker run -d -p 80:80 -p 443:443 my_import_image:nginx nginx -g 'daemon off;'`
 > проверяем статус на странице http://localhost:80/status
 
 
