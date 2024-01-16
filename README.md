@@ -55,7 +55,7 @@ Due to security reasons, some of the screenshots of the work performed have been
 
 > deleting a stopped container `docker rm -f [container_id|container_name]`
 
-> import `dcoker import ./container.tar`
+> import `docker import ./container.tar`
 
 > add the tag `docker tag [image_id] my_import_image:nginx` to the local file
 
