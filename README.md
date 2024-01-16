@@ -59,7 +59,7 @@ Due to security reasons, some of the screenshots of the work performed have been
 
 > add the tag `docker tag [image_id] my_import_image:nginx` to the local file
 
-> running the image on ports 80 and 443 `docker run -d -p 80:80 -p 443:443 nginx`
+> running the image on ports 80 and 443 `docker run -d -p 80:80 -p 443:443 my_import_image:nginx nginx -g `daemon off;`
 > check the status on the page http://localhost:80/status
 
 
